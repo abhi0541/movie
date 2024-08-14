@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Card Page with Images</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    .card {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin: 15px;
+        padding: 20px;
+        width: 220px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    .card-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    .card-description {
+        font-size: 0.9em;
+        color: #777;
+    }
+    .a{
+        text-decoration: none;
+    }
+    h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 3em;
+          margin-bottom: 30px;
+          color: black;
+          font-weight: 700;
+          text-transform: uppercase;
+      }
+</style>
+<script>
+    function showDetails(cardId) {
+        
+        window.location.href = `details.html?cardId=${cardId}`;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+            card.addEventListener('click', () => showDetails(index + 1));
+        });
+    });
+</script>
+</head>
+<body>
+    <h1>RATE THE REEL, FEEL THE REAL</h1>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt7700730/?ref_=fn_al_tt_3">
+        <img src=".\october.jpg" alt="Card 1 Image">
+        <div class="card-title">October</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt0816692/?ref_=fn_al_tt_1">
+        <img src=".\intersteller.jpg" alt="Card 2 Image">
+        <div class="card-title">Interstellar</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt13405778/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_insidious">
+        <img src=".\insidious.jpg" alt="Card 3 Image">
+        <div class="card-title">Insidious</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt4126476/?ref_=fn_al_tt_1">
+        <img src=".\afterr.jpg" alt="Card 4 Image">
+        <div class="card-title">After</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt3859980/?ref_=fn_al_tt_1">
+        <img src=".\mohenjo.jpg" alt="Card 5 Image">
+        <div class="card-title">Mohenjo-daro</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt1375666/?ref_=fn_al_tt_1">
+        <img src=".\inception.jpg" alt="Card 6 Image">
+        <div class="card-title">Inception</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt11460992/?ref_=fn_al_tt_1">
+        <img src=".\Runway34.jpg" alt="Card 7 Image">
+        <div class="card-title">Runway 34</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt1119646/?ref_=fn_al_tt_1">
+        <img src=".\hangover.jpg" alt="Card 8 Image">
+        <div class="card-title">Hangover</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt11314148/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_shiddat">
+        <img src=".\shiddat.jpg" alt="Card 9 Image">
+        <div class="card-title">Shiddat</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt13443470/?ref_=fn_al_tt_1">
+        <img src=".\wednesday.jpg" alt="Card 10 Image">
+        <div class="card-title">Wednesday</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_stranger">
+        <img src=".\stranger things.jpg" alt="Card 11 Image">
+        <div class="card-title">Stranger Things</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+<div class="card">
+    <a class = "a" href="https://www.imdb.com/title/tt0903747/?ref_=fn_al_tt_1">
+        <img src=".\breaking.jpg" alt="Card 12 Image">
+        <div class="card-title">Breaking Bad</div>
+        <div class="card-description">See IMDB Rating</div>
+    </a>
+</div>
+</body>
+</html>
